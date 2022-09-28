@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     height: 4rem;
-    background-color: rgb(207, 199, 176);
+    background-color: rgb(225, 209, 176);
     align-items: center;
     justify-content: flex-start;
 }

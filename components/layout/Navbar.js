@@ -14,33 +14,50 @@ const Navbar = () => {
             <div className={styles.navgroup + " " + styles.g2}>
                 <div className={styles.navcol}>
                     <div className={styles.navrow}>
-                        <Link href="/">
-                            <a
-                                className={`${styles.link} ${
-                                    router.pathname == "/" ? styles.active : ""
-                                }`}>
-                                Home
-                            </a>
-                        </Link>
-                    </div>
-                    <div className={styles.navrow}>
-                        <Link href="/reserve">
-                            <a
-                                className={`${styles.link} ${
-                                    router.pathname == "/reserve"
-                                        ? styles.active
-                                        : ""
-                                }`}>
-                                Reserve a table
-                            </a>
-                        </Link>
+                        <div className={styles.rowitem}>
+                            <Link href="/">
+                                <a
+                                    className={`${styles.link} ${
+                                        router.pathname == "/"
+                                            ? styles.active
+                                            : ""
+                                    }`}>
+                                    Home
+                                </a>
+                            </Link>
+                        </div>
+                        <div className={styles.rowitem}>
+                            <Link href="/info">
+                                <a
+                                    className={`${styles.link} ${
+                                        router.pathname == "/info"
+                                            ? styles.active
+                                            : ""
+                                    }`}>
+                                    Info
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                     <div className={styles.navrow}>
                         <div className={styles.rowitem}>
-                            <Link href="/carryout">
+                            <Link href="/dinein">
                                 <a
                                     className={`${styles.link} ${
-                                        router.pathname == "/carryout"
+                                        router.pathname == "/dinein"
+                                            ? styles.active
+                                            : ""
+                                    }`}>
+                                    Dine in
+                                </a>
+                            </Link>
+                        </div>
+                        {/* <div className={styles.rowitem}>
+                            <Link href="/togo?type=carryout">
+                                <a
+                                    className={`${styles.link} ${
+                                        router.pathname == "/togo" &&
+                                        router.query.type == "carryout"
                                             ? styles.active
                                             : ""
                                     }`}>
@@ -49,14 +66,27 @@ const Navbar = () => {
                             </Link>
                         </div>
                         <div className={styles.rowitem}>
-                            <Link href="/delivery">
+                            <Link href="/togo?type=delivery">
                                 <a
                                     className={`${styles.link} ${
-                                        router.pathname == "/delivery"
+                                        router.pathname == "/togo" &&
+                                        router.query.type == "delivery"
                                             ? styles.active
                                             : ""
                                     }`}>
                                     Delivery
+                                </a>
+                            </Link>
+                        </div> */}
+                        <div className={styles.rowitem}>
+                            <Link href="/takeout">
+                                <a
+                                    className={`${styles.link} ${
+                                        router.pathname == "/takeout"
+                                            ? styles.active
+                                            : ""
+                                    }`}>
+                                    Takeout
                                 </a>
                             </Link>
                         </div>

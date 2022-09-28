@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import pierogiImg from "../../../public/pierogi.jpg";
+import blankMenu from "../../../public/blank-menu.jpeg";
 import styles from "./HomePage.module.css";
 
 const HomePage = () => {
@@ -29,40 +30,41 @@ const HomePage = () => {
             <div className={styles.content}>
                 <div className={styles.contentrow}>
                     <div className={styles.p1}>
-                        <h1>
+                        <h1 className={styles.title1}>
                             Welcome to{" "}
                             <span className={styles.logo}>The Pieróg</span>
                         </h1>
                         <p>
                             Our restaurant provides a unique, to this part of
                             the world, window into the polish cuisine. We
-                            specialize, as you might have guessed in pierogi,
-                            but our menu features many polish classics{" "}
-                            <span>See Below</span>
+                            specialize, as you might have guessed, in pierogi,
+                            but our menu features many polish classics.
                         </p>
                     </div>
-                    <div className={styles.img1}>
-                        <Image
-                            width="1920px"
-                            height="1280px"
-                            layout="responsive"
-                            src={pierogiImg}
-                        />
+                </div>
+                <div className={styles.contentcol}>
+                    <h2 className={styles.title2}>Our Menu</h2>
+                    <div className={styles.imgrow}>
+                        <div className={styles.menuimg}>
+                            <Image
+                                width="1362px"
+                                height="1920px"
+                                layout="responsive"
+                                src={blankMenu}
+                            />
+                        </div>
+                        <div className={styles.menuimg}>
+                            <Image
+                                width="1362px"
+                                height="1920px"
+                                layout="responsive"
+                                src={blankMenu}
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className={styles.contentrow}>
-                    <div className={styles.menu}>
-                        <h2>Our Menu</h2>
-                        <Image
-                            width="1920px"
-                            height="1280px"
-                            layout="responsive"
-                            src={pierogiImg}
-                        />
-                    </div>
-                </div>
-                <div className={styles.contentrow}>
-                    <div className={styles.img1}>
+                    <div className={styles.histimg}>
                         <Image
                             width="1920px"
                             height="1280px"
@@ -71,16 +73,17 @@ const HomePage = () => {
                         />
                     </div>
                     <div className={styles.p1}>
-                        <h1>
-                            Welcome to{" "}
-                            <span className={styles.logo}>The Pieróg</span>
-                        </h1>
-                        <p>
-                            Our restaurant provides a unique, to this part of
-                            the world, window into the polish cuisine. We
-                            specialize, as you might have guessed in pierogi,
-                            but our menu features many polish classics{" "}
-                            <span>See Below</span>
+                        <h2 className={styles.title3}>Our history</h2>
+                        <p className={styles.p2}>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Facere autem eius qui nobis molestiae
+                            doloremque, possimus saepe, libero deserunt quam
+                            quas eligendi a at, odit dolor recusandae placeat
+                            voluptatum exercitationem? Magnam enim eveniet
+                            itaque, nesciunt minima ratione dolorum deserunt
+                            fugit esse aliquam tempore saepe veniam rem natus
+                            libero voluptatibus corrupti neque ullam molestias
+                            explicabo inventore. Optio fugiat quo enim! Dolorum?
                         </p>
                     </div>
                 </div>

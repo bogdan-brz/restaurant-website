@@ -1,0 +1,36 @@
+.togo {
+    padding: 3rem 25rem 0 25rem;
+    background-image: url("../../../public/wood-background-2.jpg");
+    background-color: rgba(19, 8, 3, 0.5); /* Tint color */
+    background-blend-mode: multiply;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(255, 247, 232);
+    color: rgb(101, 90, 58);
+}
+
+.typeselect {
+    width: 50%;
+}
+
+.selectbtn {
+    padding: 1rem;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+.selectbtn:hover {
+    cursor: pointer;
+}
+
+.selected {
+    text-decoration: underline;
+}

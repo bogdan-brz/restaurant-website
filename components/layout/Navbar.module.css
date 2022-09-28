@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(207, 199, 176);
+    background-color: rgb(225, 209, 176);
     padding: 0 5rem 0 5rem;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .rowitem {
-    margin: 0 1rem 0 1rem;
+    margin: 0 0.5rem 0 0.5rem;
 }
 
 .logolink {

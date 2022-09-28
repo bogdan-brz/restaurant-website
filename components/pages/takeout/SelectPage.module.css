@@ -1,0 +1,15 @@
+.dish {
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.description {
+    display: inline;
+    font-size: 0.95rem;
+}
+
+.price {
+}
