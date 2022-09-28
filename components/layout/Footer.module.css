@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    background-color: rgb(207, 199, 176);
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.foot {
+    color: white;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
