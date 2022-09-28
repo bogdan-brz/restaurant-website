@@ -28,14 +28,6 @@ const HomePage = () => {
         <div className={"page " + styles.home}>
             <div className={styles.content}>
                 <div className={styles.contentrow}>
-                    <div className={styles.img1}>
-                        <Image
-                            width="1920px"
-                            height="1280px"
-                            layout="responsive"
-                            src={pierogiImg}
-                        />
-                    </div>
                     <div className={styles.p1}>
                         <h1>
                             Welcome to{" "}
@@ -49,32 +41,18 @@ const HomePage = () => {
                             <span>See Below</span>
                         </p>
                     </div>
+                    <div className={styles.img1}>
+                        <Image
+                            width="1920px"
+                            height="1280px"
+                            layout="responsive"
+                            src={pierogiImg}
+                        />
+                    </div>
                 </div>
                 <div className={styles.contentrow}>
-                    <div className={styles.p1}>
-                        <h1>
-                            Welcome to{" "}
-                            <span className={styles.logo}>The Pieróg</span>
-                        </h1>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Aspernatur labore a distinctio temporibus
-                            minus. Ullam autem tenetur possimus voluptatum
-                            voluptas vero eveniet laboriosam recusandae corrupti
-                            alias sapiente tempore, iusto eaque? Soluta
-                            reprehenderit, consequuntur sed ratione impedit eius
-                            facilis. Voluptatem at facere atque sint, maiores
-                            aliquid voluptates quos. Ipsa iste praesentium illum
-                            numquam excepturi, a exercitationem. Quis
-                            consectetur doloribus porro odio. Facere veniam
-                            voluptatibus eum expedita magnam? A dolorem minus
-                            facilis voluptas ratione amet libero asperiores
-                            eligendi nesciunt accusamus at deserunt enim,
-                            blanditiis nemo sed! Ducimus nesciunt sint
-                            exercitationem quo necessitatibus!
-                        </p>
-                    </div>
-                    <div className={styles.img1}>
+                    <div className={styles.menu}>
+                        <h2>Our Menu</h2>
                         <Image
                             width="1920px"
                             height="1280px"
