@@ -9,6 +9,11 @@
     background-color: rgb(255, 247, 232);
     width: 100%;
     padding: 2rem;
+    color: rgb(101, 90, 58);
+}
+
+.info {
+    margin-top: 0.2rem;
 }
 
 .info span {
@@ -17,4 +22,5 @@
 
 .content p {
     width: 70%;
+    line-height: 1.3rem;
 }
