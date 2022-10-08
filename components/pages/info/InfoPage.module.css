@@ -1,5 +1,5 @@
 .info {
-    padding: 0 15rem 0 15rem;
+    padding: 3rem 25rem 0 25rem;
     background-image: url("../../../public/wood-background-1.jpg");
     background-color: rgba(19, 8, 3, 0.5); /* Tint color */
     background-blend-mode: multiply;
@@ -8,5 +8,5 @@
 .content {
     background-color: rgb(255, 247, 232);
     width: 100%;
-    padding: 1.5rem;
+    padding: 2rem;
 }
