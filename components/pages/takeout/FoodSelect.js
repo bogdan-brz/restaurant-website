@@ -1,6 +1,7 @@
 import styles from "./FoodSelect.module.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import SelectPage from "./SelectPage";
+import CartContext from "./cart-context/CartContext";
 
 const dummyMenu = [
     {
@@ -9,20 +10,20 @@ const dummyMenu = [
             {
                 id: 0,
                 name: "Pierog Ruski",
-                price: "$22.30",
+                price: 22.3,
                 description:
                     "very good Pierog Ruski with farsz (mashed potatoes and cheese, but tastes nothing like you'd imagine the combination of those things to taste like.",
             },
             {
                 id: 1,
                 name: "Pierog with meat",
-                price: "$21.30",
+                price: 21.3,
                 description: "very good Pierog with meat.",
             },
             {
                 id: 2,
                 name: "Pierog with cheese",
-                price: "$21.30",
+                price: 21.3,
                 description: "very good Pierog with cheese.",
             },
         ],
@@ -33,27 +34,51 @@ const dummyMenu = [
             {
                 id: 3,
                 name: "Pierog with cheese",
-                price: "$21.30",
+                price: 21.3,
                 description: "very good Pierog with cheese.",
             },
             {
                 id: 4,
                 name: "Pierog Ruski",
-                price: "$22.30",
+                price: 22.3,
                 description:
                     "very good Pierog Ruski with farsz (mashed potatoes and cheese, but tastes nothing like you'd imagine the combination of those things to taste like.",
             },
             {
                 id: 5,
                 name: "Pierog with meat",
-                price: "$21.30",
+                price: 21.3,
+                description: "very good Pierog with meat.",
+            },
+        ],
+    },
+    {
+        title: "Drinks",
+        selection: [
+            {
+                id: 3,
+                name: "Pierog with cheese",
+                price: 21.3,
+                description: "very good Pierog with cheese.",
+            },
+            {
+                id: 4,
+                name: "Pierog Ruski",
+                price: 22.3,
+                description:
+                    "very good Pierog Ruski with farsz (mashed potatoes and cheese, but tastes nothing like you'd imagine the combination of those things to taste like.",
+            },
+            {
+                id: 5,
+                name: "Pierog with meat",
+                price: 21.3,
                 description: "very good Pierog with meat.",
             },
         ],
     },
 ];
 
-const FoodSelect = (props) => {
+const FoodSelect = () => {
     const [selectId, setSelectId] = useState(0);
     const menu = dummyMenu;
     return (
@@ -62,6 +87,28 @@ const FoodSelect = (props) => {
                 title={menu[selectId].title}
                 selection={menu[selectId].selection}
             />
+            <div className={styles.buttons}>
+                <div className={styles.btncontainer}>
+                    {selectId != 0 && (
+                        <button
+                            className={styles.switchbtn + " " + styles.btn1}
+                            onClick={() => {
+                                setSelectId((id) => id - 1);
+                            }}>
+                            previous page
+                        </button>
+                    )}
+                    {selectId != menu.length - 1 && (
+                        <button
+                            className={styles.switchbtn + " " + styles.btn2}
+                            onClick={() => {
+                                setSelectId((id) => id + 1);
+                            }}>
+                            next page
+                        </button>
+                    )}
+                </div>
+            </div>
         </div>
     );
 };

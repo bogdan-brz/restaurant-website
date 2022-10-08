@@ -1,0 +1,30 @@
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.switchbtn {
+    margin-top: 0.5rem;
+    display: inline;
+    background-color: rgb(234, 246, 255);
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    padding: 0 0.3rem 0.1rem 0.3rem;
+}
+
+.switchbtn:hover {
+    cursor: pointer;
+}
+
+.btn1 {
+    float: left;
+}
+
+.btn2 {
+    float: right;
+}
+
+.btncontainer {
+    width: 11rem;
+}

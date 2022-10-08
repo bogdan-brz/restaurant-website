@@ -1,5 +1,45 @@
-.dish {
+.title {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 1rem;
+}
+
+.plusbtn,
+.minusbtn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.198);
+    border: 0;
+    border-radius: 0.2rem;
+}
+
+.minusbtn {
+    padding: 0 0.4rem 0 0.4rem;
+}
+
+.plusbtn:hover,
+.minusbtn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
+.disabled,
+.disabled:hover {
+    background-color: rgb(218, 218, 218);
+    color: grey;
+    cursor: auto;
+}
+
+.dish {
+    width: 87%;
 }
 
 .name {
@@ -12,4 +52,20 @@
 }
 
 .price {
+}
+
+.addsection {
+    width: 5%;
+}
+
+.quantitysection {
+    width: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.quantity {
+    margin-right: 1rem;
 }

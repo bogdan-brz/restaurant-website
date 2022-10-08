@@ -1,0 +1,36 @@
+.deliveryinput {
+    width: 100%;
+}
+
+.title {
+    font-size: 1.6rem;
+}
+
+.input {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    background-color: white;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+}
+
+.button {
+    margin-left: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.successmsg {
+    color: green;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.failuremsg {
+    color: rgb(205, 27, 27);
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}

@@ -17,6 +17,13 @@ const DineInPage = () => {
                     run low on tables most evenings of the week.
                 </p>
                 <p>
+                    You can find our menu on the{" "}
+                    <Link href="/">
+                        <a className={styles.link}>Home</a>
+                    </Link>{" "}
+                    page
+                </p>
+                <p>
                     We also offer{" "}
                     <Link href="/takeout?type=carryout">
                         <a className={styles.link}>carryout</a>

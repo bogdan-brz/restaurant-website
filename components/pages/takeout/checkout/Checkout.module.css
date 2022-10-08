@@ -1,0 +1,58 @@
+.checkout {
+    width: 40%;
+    border-top: 1px solid black;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+.cart {
+    width: 100%;
+}
+
+.dish {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.priceperdish {
+    color: black;
+}
+
+.quantity {
+    color: rgb(180, 161, 104);
+    margin-left: 0.6rem;
+}
+
+.total {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+    text-decoration: underline;
+    color: black;
+}
+
+.checkoutlink {
+    color: rgb(0, 0, 0);
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.checkoutlink:hover {
+    cursor: pointer;
+    color: rgb(46, 46, 46);
+    text-decoration: underline;
+}
+
+.disabled {
+    color: grey;
+}
+
+.checkoutlink.disabled:hover {
+    cursor: auto;
+    color: grey;
+    text-decoration: none;
+}

@@ -34,3 +34,13 @@
 .selected {
     text-decoration: underline;
 }
+
+.label {
+    margin-bottom: 0.4rem;
+    transition: 0.3s;
+}
+
+.highlight {
+    color: rgb(180, 180, 69);
+    text-decoration: underline;
+}
